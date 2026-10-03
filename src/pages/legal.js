@@ -25,7 +25,7 @@ export function renderLegalPage(type) {
           <p style="margin-bottom: 1.5rem;">Any information provided through our program consultation forms, aircraft concept enquiries, or project portals is strictly confidential. PRIVATECRAFT does not sell, trade, or distribute client data to unauthorized third parties.</p>
 
           <h3 class="text-ivory" style="font-size: 1.25rem; margin-top: 1.5rem; margin-bottom: 0.75rem;">3. Engineering & Manufacturing Disclosure</h3>
-          <p>PRIVATECRAFT operates as an aerospace design and manufacturing consultancy. Where specified, we coordinate with certified partners, production specialists, and technical stakeholders to deliver compliant aircraft programs and mission-ready systems.</p>
+          <p>PRIVATECRAFT operates as an aerospace design and manufacturing consultancy. Where specified, we coordinate with vetted partners, production specialists, and technical stakeholders to deliver aircraft programs and mission-ready systems.</p>
         </div>
       </div>
     </section>

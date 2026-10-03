@@ -31,7 +31,7 @@ export function renderAircraftManagementPage() {
           </div>
           <div class="card glass-panel" style="padding: 2rem;">
             <h3 class="card-title">Compliance & Regulatory</h3>
-            <p class="text-cloud" style="font-size: 0.9375rem;">Management of registrations, certifications, audit trails and regulatory reporting across relevant jurisdictions.</p>
+            <p class="text-cloud" style="font-size: 0.9375rem;">Management of registrations, maintenance records, audit trails and operational reporting across relevant jurisdictions.</p>
           </div>
           <div class="card glass-panel" style="padding: 2rem;">
             <h3 class="card-title">Production Planning</h3>

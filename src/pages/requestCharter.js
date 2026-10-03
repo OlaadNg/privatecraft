@@ -28,7 +28,7 @@ export function renderRequestCharterPage() {
                 <input type="radio" name="trip_type" value="Production Program" /> Production Program
               </label>
               <label style="display: flex; align-items: center; gap: 0.5rem; cursor: pointer; color: var(--color-ivory);">
-                <input type="radio" name="trip_type" value="Certification / Modernisation" /> Certification / Modernisation
+                <input type="radio" name="trip_type" value="Modernisation / Upgrade" /> Modernisation / Upgrade
               </label>
             </div>
 
@@ -66,7 +66,7 @@ export function renderRequestCharterPage() {
                   <option value="Program Manufacturing">Program Manufacturing</option>
                   <option value="Systems Integration">Systems Integration</option>
                   <option value="Interior & Completion">Interior & Completion</option>
-                  <option value="Certification Support">Certification Support</option>
+                  <option value="Aircraft Parts & Components">Aircraft Parts & Components</option>
                   <option value="Modernisation">Modernisation</option>
                 </select>
               </div>
@@ -89,7 +89,7 @@ export function renderRequestCharterPage() {
                 </div>
                 <div class="form-group">
                   <label class="form-label" for="additional_notes">Project Notes</label>
-                  <input type="text" id="additional_notes" class="form-input" placeholder="e.g. mission profile, certification requirements, timeline" />
+                  <input type="text" id="additional_notes" class="form-input" placeholder="e.g. mission profile, production requirements, timeline" />
                 </div>
               </div>
             </div>

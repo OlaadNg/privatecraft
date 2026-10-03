@@ -11,7 +11,7 @@ export function renderContactPage() {
         <span class="eyebrow" style="margin-bottom: 0.5rem;">Engineering Enquiries</span>
         <h1 class="heading-xl text-ivory">Speak With Our Manufacturing Team</h1>
         <p class="text-cloud" style="font-size: 1.0625rem; max-width: 650px; margin-top: 0.75rem;">
-          Our aerospace specialists are available to assess aircraft concepts, production programs, and certification pathways across the full lifecycle.
+          Our aerospace specialists are available to discuss aircraft concepts, production programs, and engineering requirements across the full lifecycle.
         </p>
       </div>
     </section>
@@ -65,7 +65,7 @@ export function renderContactPage() {
                   <option value="Airframe Engineering">Airframe Engineering</option>
                   <option value="Production Systems">Production Systems</option>
                   <option value="Design & Integration">Design & Integration</option>
-                  <option value="Certification Support">Certification Support</option>
+                  <option value="Aircraft Parts & Components">Aircraft Parts & Components</option>
                   <option value="General Inquiry">General Engineering Inquiry</option>
                 </select>
               </div>

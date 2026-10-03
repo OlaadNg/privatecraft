@@ -42,6 +42,10 @@ body::before {
   z-index: 1;
 }
 
+#app-header {
+  z-index: 501;
+}
+
 .container {
   width: 100%;
   max-width: var(--container-max);

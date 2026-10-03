@@ -1,8 +1,53 @@
 import { getFallbackAircraftData } from '../js/database.js';
 
+const specializedPrograms = [
+  {
+    category: 'War Aircraft',
+    manufacturer: 'Defense Programs',
+    title: 'War Aircraft Programs',
+    images: [
+      {
+        src: '/assets/f22-defense-aircraft.jpg',
+        alt: 'U.S. Air Force F-22 Raptor in flight',
+        credit: '<a class="image-credit" href="https://commons.wikimedia.org/wiki/File:F-22_Raptor_edit1.jpg" target="_blank" rel="noreferrer">U.S. Air Force / public domain</a>'
+      },
+      {
+        src: '/assets/f35-defense-aircraft.jpg',
+        alt: 'Three F-35 Lightning II aircraft flying in formation',
+        credit: '<a class="image-credit" href="https://commons.wikimedia.org/wiki/File:F-35_Lightning_II_variants_in_flight_near_Eglin_AFB_in_2014.jpg" target="_blank" rel="noreferrer">U.S. Air Force / public domain</a>'
+      }
+    ],
+    interior_description: 'Defense aircraft platform engineering and systems integration for demanding mission profiles.',
+    inquiry_category: 'War Aircraft'
+  },
+  {
+    category: 'Aircraft Parts',
+    manufacturer: 'Component Manufacturing',
+    title: 'Aircraft Parts & Components',
+    images: [
+      {
+        src: '/assets/aircraft-engine-parts.jpg',
+        alt: 'Aircraft engine assembly being inspected at a factory',
+        credit: '<a class="image-credit" href="https://commons.wikimedia.org/wiki/File:R-1830_engine_on_C-47_at_factory_1942.jpg" target="_blank" rel="noreferrer">Alfred T. Palmer / public domain</a>'
+      },
+      {
+        src: '/assets/turbofan-inspection.jpg',
+        alt: 'Aircraft technician inspecting the fan blades of a turbofan engine',
+        credit: '<a class="image-credit" href="https://commons.wikimedia.org/wiki/File:A_Braathens_employee_working_on_a_turbofan_engine.jpg" target="_blank" rel="noreferrer">J-C G / CC BY-SA 3.0</a>'
+      }
+    ],
+    interior_description: 'Precision-built propulsion, airframe, and systems components engineered for fit, performance, and service life.',
+    inquiry_category: 'Aircraft Parts & Components'
+  }
+];
+
+function getPortfolioData() {
+  return [...getFallbackAircraftData(), ...specializedPrograms];
+}
+
 export function renderFleetPage() {
-  const fleetData = getFallbackAircraftData();
-  const categories = ['All', 'Ultra Long Range Jets', 'Long Range Jets', 'Super Midsize Jets', 'Heavy Jets', 'Light Jets', 'Very Light Jets', 'VIP Airliners'];
+  const fleetData = getPortfolioData();
+  const categories = ['All', 'Ultra Long Range Jets', 'Long Range Jets', 'Super Midsize Jets', 'Heavy Jets', 'Light Jets', 'Very Light Jets', 'VIP Airliners', 'War Aircraft', 'Aircraft Parts'];
 
   return `
     <!-- Page Header Banner -->
@@ -39,7 +84,25 @@ export function renderFleetPage() {
 }
 
 function renderAircraftGridItems(items) {
-  return items.map(aircraft => `
+  return items.map(aircraft => aircraft.inquiry_category ? `
+    <div class="card">
+      <div class="program-gallery">
+        ${aircraft.images.map(image => `
+          <div class="program-gallery-item">
+            <img src="${image.src}" alt="${image.alt}" loading="lazy" decoding="async" />
+            ${image.credit}
+          </div>
+        `).join('')}
+        <span class="badge badge-gold" style="position: absolute; top: 1rem; left: 1rem;">${aircraft.category}</span>
+      </div>
+      <div class="card-body">
+        <div style="font-size: 0.75rem; color: var(--color-gold); font-weight: 600; margin-bottom: 0.25rem;">${aircraft.manufacturer}</div>
+        <h3 class="card-title">${aircraft.title}</h3>
+        <p class="text-cloud" style="font-size: 0.875rem; margin-bottom: 1.25rem;">${aircraft.interior_description}</p>
+        <a href="/request-charter?category=${encodeURIComponent(aircraft.inquiry_category)}" class="btn btn-outline btn-sm" data-link>Discuss Program</a>
+      </div>
+    </div>
+  ` : `
     <div class="card">
       <div class="card-img-wrapper">
         <img src="${aircraft.image_url}" alt="${aircraft.title}" />
@@ -66,7 +129,7 @@ function renderAircraftGridItems(items) {
 export function afterRenderFleetPage() {
   const filterBtns = document.querySelectorAll('.filter-tab-btn');
   const container = document.getElementById('fleet-grid-container');
-  const allData = getFallbackAircraftData();
+  const allData = getPortfolioData();
 
   filterBtns.forEach(btn => {
     btn.addEventListener('click', () => {

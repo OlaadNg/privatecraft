@@ -51,7 +51,7 @@ export function renderHomePage() {
         <div class="section-header" style="text-align: center; max-width: 700px; margin-left: auto; margin-right: auto;">
           <span class="eyebrow">Capabilities</span>
           <h2 class="heading-lg text-ivory" style="margin-top: 0.5rem; margin-bottom: 1rem;">A Full Aerospace Manufacturing Practice</h2>
-          <p class="text-cloud">We design, engineer, and deliver next-generation aircraft programs — combining advanced production capability with precision certification and systems integration.</p>
+          <p class="text-cloud">We design, engineer, and deliver next-generation aircraft programs — combining advanced production capability with precision manufacturing and systems integration.</p>
         </div>
 
         <div class="grid-3">
@@ -85,8 +85,8 @@ export function renderHomePage() {
 
           <div class="card glass-panel" style="padding: 2rem;">
             <div style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1rem;">05</div>
-            <h3 class="card-title">Certification & Compliance</h3>
-            <p class="text-cloud" style="font-size: 0.9375rem; margin-bottom: 1.5rem; flex-grow: 1;">Regulatory readiness, compliance documentation, and airworthiness management across every project phase.</p>
+            <h3 class="card-title">Manufacturing Quality</h3>
+            <p class="text-cloud" style="font-size: 0.9375rem; margin-bottom: 1.5rem; flex-grow: 1;">Production inspections, component traceability, and process controls built into every manufacturing phase.</p>
             <a href="/contact" class="btn btn-outline btn-sm" data-link>Speak to Engineering</a>
           </div>
 
@@ -95,6 +95,32 @@ export function renderHomePage() {
             <h3 class="card-title">Global Support</h3>
             <p class="text-cloud" style="font-size: 0.9375rem; margin-bottom: 1.5rem; flex-grow: 1;">End-to-end operational support across program delivery, maintenance readiness, and fleet lifecycle continuity.</p>
             <a href="/destinations" class="btn btn-outline btn-sm" data-link>See Support Network</a>
+          </div>
+
+          <div class="card glass-panel">
+            <div class="program-category-image">
+              <img src="/assets/aircraft-engine-parts.jpg" alt="Aircraft engine assembly being inspected by factory workers" loading="lazy" decoding="async" />
+              <a class="image-credit" href="https://commons.wikimedia.org/wiki/File:R-1830_engine_on_C-47_at_factory_1942.jpg" target="_blank" rel="noreferrer">Alfred T. Palmer / Library of Congress, public domain</a>
+            </div>
+            <div class="program-category-content">
+              <span class="eyebrow" style="margin-bottom: 0.75rem;">07 / Components</span>
+              <h3 class="card-title">Aircraft Parts & Components</h3>
+              <p class="text-cloud" style="font-size: 0.9375rem; margin-bottom: 1.5rem; flex-grow: 1;">Precision-engineered airframe, propulsion, and systems components built for dependable fit, performance, and service life.</p>
+              <a href="/aircraft-management" class="btn btn-outline btn-sm" data-link>Explore Component Manufacturing</a>
+            </div>
+          </div>
+
+          <div class="card glass-panel">
+            <div class="program-category-image">
+              <img src="/assets/f22-defense-aircraft.jpg" alt="U.S. Air Force F-22 Raptor in flight over Kadena Air Base" loading="lazy" decoding="async" />
+              <a class="image-credit" href="https://commons.wikimedia.org/wiki/File:F-22_Raptor_edit1.jpg" target="_blank" rel="noreferrer">U.S. Air Force / public domain</a>
+            </div>
+            <div class="program-category-content">
+              <span class="eyebrow" style="margin-bottom: 0.75rem;">08 / Mission Systems</span>
+              <h3 class="card-title">Defense & Special-Mission Platforms</h3>
+              <p class="text-cloud" style="font-size: 0.9375rem; margin-bottom: 1.5rem; flex-grow: 1;">Aircraft engineering and systems integration for defense, surveillance, and other demanding mission profiles.</p>
+              <a href="/aircraft-sales" class="btn btn-outline btn-sm" data-link>Explore Mission Engineering</a>
+            </div>
           </div>
         </div>
       </div>
@@ -146,7 +172,7 @@ export function renderHomePage() {
         <div class="grid-3">
           <div class="glass-panel" style="padding: 2rem;">
             <h3 style="font-size: 1.25rem;" class="text-gold">Precision</h3>
-            <p class="text-cloud" style="font-size: 0.875rem; margin-top: 0.5rem;">Every detail is engineered against exact performance and certification requirements.</p>
+            <p class="text-cloud" style="font-size: 0.875rem; margin-top: 0.5rem;">Every detail is engineered against exact performance and production requirements.</p>
           </div>
           <div class="glass-panel" style="padding: 2rem;">
             <h3 style="font-size: 1.25rem;" class="text-gold">Performance</h3>

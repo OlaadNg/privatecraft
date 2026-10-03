@@ -34,8 +34,8 @@ export function renderDesignCompletionPage() {
             <p class="text-cloud" style="font-size: 0.9375rem;">Entertainment, connectivity, lighting, climate and galley systems specified and integrated for seamless use.</p>
           </div>
           <div class="card glass-panel" style="padding: 2rem;">
-            <h3 class="card-title">Certification Support</h3>
-            <p class="text-cloud" style="font-size: 0.9375rem;">Coordination of engineering, airworthiness and regulatory sign-off across the completion process.</p>
+            <h3 class="card-title">Cabin Mock-ups</h3>
+            <p class="text-cloud" style="font-size: 0.9375rem;">Full-scale and digital cabin mock-ups to review layouts, finishes, clearances, and passenger flow before production.</p>
           </div>
           <div class="card glass-panel" style="padding: 2rem;">
             <h3 class="card-title">Project Management</h3>

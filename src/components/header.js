@@ -10,22 +10,21 @@ export function renderHeader() {
           </svg>
         </a>
 
-        <nav class="nav-menu">
+        <nav class="nav-menu" aria-label="Primary navigation">
           <a href="/charter" class="nav-link" data-link>Manufacturing</a>
           <a href="/aircraft" class="nav-link" data-link>Programs</a>
           <a href="/aircraft-sales" class="nav-link" data-link>Engineering</a>
           <a href="/aircraft-management" class="nav-link" data-link>Production</a>
           <a href="/design-completion" class="nav-link" data-link>Design</a>
-          <a href="/destinations" class="nav-link" data-link>Certification</a>
+          <a href="/destinations" class="nav-link" data-link>Aerospace Hubs</a>
           <a href="/about" class="nav-link" data-link>About</a>
           <a href="/insights" class="nav-link" data-link>Insights</a>
           <a href="/contact" class="nav-link" data-link>Contact</a>
         </nav>
 
         <div class="header-actions">
-          <a href="/login" class="btn btn-ghost btn-sm" data-link style="margin-right: 0.5rem;">Portal</a>
           <a href="/request-charter" class="btn btn-gold btn-sm" data-link>Consultation</a>
-          <button class="hamburger-btn" id="hamburger-toggle" aria-label="Toggle menu">
+          <button class="hamburger-btn" id="hamburger-toggle" type="button" aria-label="Toggle menu" aria-controls="mobile-drawer" aria-expanded="false">
             <span></span>
             <span></span>
             <span></span>
@@ -34,7 +33,7 @@ export function renderHeader() {
       </div>
     </header>
 
-    <div class="mobile-nav-drawer" id="mobile-drawer">
+    <nav class="mobile-nav-drawer" id="mobile-drawer" aria-label="Mobile navigation" aria-hidden="true">
       <div class="mobile-nav-links">
         <a href="/" class="mobile-nav-link" data-link>Home</a>
         <a href="/charter" class="mobile-nav-link" data-link>Manufacturing</a>
@@ -42,15 +41,14 @@ export function renderHeader() {
         <a href="/aircraft-sales" class="mobile-nav-link" data-link>Engineering</a>
         <a href="/aircraft-management" class="mobile-nav-link" data-link>Production</a>
         <a href="/design-completion" class="mobile-nav-link" data-link>Design Studio</a>
-        <a href="/destinations" class="mobile-nav-link" data-link>Certification</a>
+        <a href="/destinations" class="mobile-nav-link" data-link>Aerospace Hubs</a>
         <a href="/about" class="mobile-nav-link" data-link>About Us</a>
         <a href="/insights" class="mobile-nav-link" data-link>Insights</a>
         <a href="/contact" class="mobile-nav-link" data-link>Contact</a>
       </div>
       <div style="display: flex; flex-direction: column; gap: 1rem;">
         <a href="/request-charter" class="btn btn-gold" data-link>Start a Consultation</a>
-        <a href="/login" class="btn btn-outline" data-link>Client Portal</a>
       </div>
-    </div>
+    </nav>
   `;
 }

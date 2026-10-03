@@ -5,6 +5,13 @@ export function initNavigation() {
   const hamburgerBtn = $('#hamburger-toggle');
   const mobileDrawer = $('#mobile-drawer');
 
+  const closeMobileMenu = () => {
+    mobileDrawer?.classList.remove('active');
+    hamburgerBtn?.setAttribute('aria-expanded', 'false');
+    mobileDrawer?.setAttribute('aria-hidden', 'true');
+    document.body.classList.remove('menu-open');
+  };
+
   // Scroll header glass effect
   window.addEventListener('scroll', () => {
     if (window.scrollY > 30) {
@@ -18,13 +25,23 @@ export function initNavigation() {
   hamburgerBtn?.addEventListener('click', () => {
     const isActive = mobileDrawer?.classList.toggle('active');
     hamburgerBtn.setAttribute('aria-expanded', String(isActive));
+    mobileDrawer?.setAttribute('aria-hidden', String(!isActive));
+    document.body.classList.toggle('menu-open', Boolean(isActive));
   });
 
-  // Close drawer on mobile link click
-  $$('.mobile-nav-link').forEach(link => {
+  // Close the drawer after any menu action.
+  mobileDrawer?.querySelectorAll('[data-link]').forEach(link => {
     link.addEventListener('click', () => {
-      mobileDrawer?.classList.remove('active');
+      closeMobileMenu();
     });
+  });
+
+  document.addEventListener('keydown', event => {
+    if (event.key === 'Escape') closeMobileMenu();
+  });
+
+  window.addEventListener('resize', () => {
+    if (window.innerWidth > 1200) closeMobileMenu();
   });
 
   // Update active state based on current path

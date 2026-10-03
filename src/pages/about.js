@@ -8,7 +8,7 @@ export function renderAboutPage() {
         <span class="eyebrow" style="margin-bottom: 0.5rem;">Who We Are</span>
         <h1 class="heading-xl text-ivory">Aerospace Innovation, Built in Practice.</h1>
         <p class="text-cloud" style="font-size: 1.125rem; max-width: 650px; margin-top: 1rem;">
-          PRIVATECRAFT brings together design, engineering, manufacturing, and certification expertise to create advanced aircraft programs for a new generation of flight.
+          PRIVATECRAFT brings together design, engineering, and manufacturing expertise to create advanced aircraft programs for a new generation of flight.
         </p>
       </div>
     </section>
@@ -31,9 +31,9 @@ export function renderAboutPage() {
           </div>
 
           <div class="card glass-panel" style="padding: 2.5rem;">
-            <div style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1rem;">Certification</div>
+            <div style="font-family: var(--font-heading); font-size: 2.5rem; color: var(--color-gold); margin-bottom: 1rem;">Integration</div>
             <p class="text-cloud" style="font-size: 0.9375rem; line-height: 1.6;">
-              Technical quality and compliance are non-negotiable. Our team supports airworthiness, safety validation, and regulatory confidence throughout the lifecycle.
+              Avionics, propulsion, and mission systems are brought together through careful design, testing, and production planning.
             </p>
           </div>
         </div>

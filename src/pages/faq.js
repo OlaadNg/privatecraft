@@ -1,9 +1,8 @@
 export function renderFaqPage() {
   const faqs = [
-    { q: 'What kind of aircraft manufacturing services does PRIVATECRAFT provide?', a: 'We support modern aircraft and aerospace programs across design engineering, structural development, production planning, systems integration, interiors, and certification coordination.' },
-    { q: 'Can PRIVATECRAFT support custom aircraft programs?', a: 'Yes. We tailor programs around mission profile, cabin configuration, operational requirements, certification path, and production timeline.' },
+    { q: 'What kind of aircraft manufacturing services does PRIVATECRAFT provide?', a: 'We support modern aircraft and aerospace programs across design engineering, structural development, production planning, systems integration, interiors, and component manufacturing.' },
+    { q: 'Can PRIVATECRAFT support custom aircraft programs?', a: 'Yes. We tailor programs around mission profile, cabin configuration, operational requirements, and production timeline.' },
     { q: 'How does the manufacturing process begin?', a: 'Every project starts with a discovery phase covering concept fit, engineering requirements, performance targets, and priority milestones before we scope design and production work.' },
-    { q: 'Do you support certification and regulatory compliance?', a: 'Yes. Our team works with compliance, validation, and airworthiness planning to move concept work toward production and regulatory sign-off.' },
     { q: 'What sectors do you serve?', a: 'We work across executive aviation, premium aircraft completion, specialised mission platforms, and advanced aerospace manufacturing programs.' }
   ];
 
@@ -16,7 +15,7 @@ export function renderFaqPage() {
             Frequently Asked Questions
           </h1>
           <p class="text-cloud" style="font-size: 1.0625rem;">
-            Answers to common queries regarding aircraft engineering, manufacturing workflows, program delivery, and certification support.
+            Answers to common queries regarding aircraft engineering, manufacturing workflows, component production, and program delivery.
           </p>
         </div>
 

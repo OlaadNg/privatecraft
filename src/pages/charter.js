@@ -61,7 +61,7 @@ export function renderCharterPage() {
               <h3 class="card-title">Long-Range & VIP Platforms</h3>
               <p class="text-cloud" style="font-size: 0.9375rem; margin-bottom: 1.5rem;">Large-format aircraft ecosystems engineered for long-sector endurance, luxury interiors, and advanced operational resilience.</p>
               <div style="font-size: 0.8125rem; color: var(--color-muted); margin-bottom: 1.5rem;">
-                <strong>Focus:</strong> Advanced systems, certification, lifecycle support
+                <strong>Focus:</strong> Advanced systems, validation, lifecycle support
               </div>
               <a href="/request-charter?category=Ultra+Long+Range+Jets" class="btn btn-gold btn-sm" data-link>Request Flagship Brief</a>
             </div>
@@ -70,7 +70,7 @@ export function renderCharterPage() {
 
         <div class="glass-panel-gold" style="padding: 3rem; text-align: center; border-radius: var(--radius-lg);">
           <h2 class="heading-md text-ivory" style="margin-bottom: 1rem;">Ready to Build Your Next Aircraft Program?</h2>
-          <p class="text-cloud" style="max-width: 600px; margin: 0 auto 2rem auto;">Our engineering and manufacturing teams are ready to help shape your aircraft concept, production roadmap, and certification path.</p>
+          <p class="text-cloud" style="max-width: 600px; margin: 0 auto 2rem auto;">Our engineering and manufacturing teams are ready to help shape your aircraft concept, production roadmap, and delivery plan.</p>
           <a href="/request-charter" class="btn btn-gold btn-lg" data-link>Start a Manufacturing Consultation</a>
         </div>
       </div>
